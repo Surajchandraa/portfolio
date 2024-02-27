@@ -13,7 +13,7 @@ let skills=document.getElementsByClassName('skills-table')[0];
 let heading=document.getElementById('table-head')
 
   
-
+// text to be display
 
 let text = "I am Suraj Chandra, currently studying engineering at the Institute of Technology, Gopeshwar. My primary interest lies in the field of software engineering. I am a 'Backend Developer'";
 let text2 = "I maintain my GitHub repository with passion, showcasing my projects and contributions to the open-source community. "
@@ -26,7 +26,7 @@ function typeText(element, text) {
             if (index < text.length) {
                 element.textContent += text.charAt(index);
                 index++;
-                setTimeout(type, 20);
+                setTimeout(type, 20); //set speed here(delay between each character)
             } else {
                 index = 0;
                 resolve();
@@ -52,6 +52,7 @@ function normal_printing(){
 
 }
 
+// step by step execution
 async function startTyping() {
     await typeText(textcon, text);
     await typeText(textcon2, text2);
@@ -101,6 +102,7 @@ function shouldRunTypewriter() {
     return sessionStorage.getItem('typewriterEnabled') !== 'false';
 }
 
+// session storage using for not repeate typewritter effect while you refresh.
 function setTypewriterFlag(enabled) {
     sessionStorage.setItem('typewriterEnabled', enabled);
 }
