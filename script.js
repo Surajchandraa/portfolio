@@ -15,7 +15,7 @@ let heading=document.getElementById('table-head')
   
 // text to be display
 
-let text = "I am Suraj Chandra, currently studying engineering at the Institute of Technology, Gopeshwar. My primary interest lies in the field of software engineering. I am a 'Backend Developer'";
+let text = "I am Suraj Chandra, i have completed engineering from  Institute of Technology, Gopeshwar. My primary interest lies in the field of software engineering.";
 let text2 = "I maintain my GitHub repository with passion, showcasing my projects and contributions to the open-source community. "
 let text3= "I actively contribute to npm by creating and maintaining packages that solve specific problems or enhance developer workflows."
 let index = 0;
